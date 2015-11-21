@@ -1,8 +1,15 @@
-import assert from 'assert';
-import index from '../index';
+import clock from "../index";
+import assert from "assert";
 
-describe('base', () => {
-  it('base', () => {
-
-  });
+describe("clock", () => {
+    it("base", (done) => {
+        let counter = 0;
+        clock((name, sTime) => {
+            counter++;
+        });
+        setTimeout(() => {
+            assert.equal(counter, 2);
+            done();
+        }, 1500);
+    });
 });

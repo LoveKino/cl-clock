@@ -1,13 +1,12 @@
 {
   "name": "cl-clock",
   "version": "0.0.1",
-  "description": "",
+  "description": "Trigger Time Event By Second",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register test/**/*.js"
   },
   "dependencies":{
-    "babel-polyfill": "*"
   },
   "devDependencies": {
     "mocha": "*",
@@ -22,6 +21,8 @@
     "url": "git+https://github.com/LoveKino/cl-clock.git"
   },
   "keywords": [
+    "clock",
+    "timer"
   ],
   "author": "ddchen",
   "license": "MIT"
